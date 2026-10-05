@@ -71,7 +71,7 @@ class AppManager:
             self.sensor_data.humidity = float(parts[1])
             self.sensor_data.pressure = float(parts[2])
         except (ValueError, IndexError):
-            pass  # TODO: logować błędne linie zamiast cicho je ignorować
+            pass  
 
     def serial_reader(self, data_queue: queue.Queue):
         try:
